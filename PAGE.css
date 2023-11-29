@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'josefin sans', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+}
+header 
+{
+  background-color: #0c0c0c;
+  width: 100%; /*l3ard */
+  position: fixed;
+  z-index: 999; /* bach mat4atich 3lih chi 7aja */
+  display: flex;
+  justify-content: space-between; /*katdir wa7a espace mabin les element "a":"nav" */
+  align-items: center; 
+  padding: 10px 200px;
+}
+.home a i {
+    color: white;
+}
+.logo{
+    text-decoration: none; /*bach t7ayed lkhat */
+    color: #00fb22;
+    /* text-transform: uppercase; bach iraj3o L7orf kapital */
+    font-weight: 600;
+    font-size: 1.4em; /*"1,8em" bachi Ib9a sise dyalha nadi wa5a tbadel f ex: sise body ...*/
+    font-style: italic; 
+}
+.News-card{
+    background-color: rgba(0, 0, 0, 0.731);
+    border: 1px solid rgb(248, 244, 244);
+    min-height: 14em;
+    
+    width: 45%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10em;
+    margin-top: 10em;
+    padding-top: 2.5em;
+    padding-bottom:2.5em ;
+    transition: 1s ease;
+    align-items: center; 
+    position: fixed;
+}
+
+
+.navigation a{
+    color:#00fc3f  ;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500; 
+    padding-left: 30px; /*30px dayl espace mabin les link "A"*/
+    transition: 0.8s ease;
+}
+.navigation a:hover{
+    color: #038012;
+    transform: scale(1.1);
+}
+section{
+    padding: 100px 200px;
+    
+}
+.main{
+    width: 100%;
+    min-height: 100vh; /*a9al 7aja hiya 100 ymkn tkon ktar*/
+    display: flex;
+    align-items: center;
+    background: url(image/bg.webp) no-repeat ;
+    background-size: cover;/*bach t7at sora kifma hiya*/
+    background-position: 0px 50px;
+    background-attachment: fixed;
+}
+.main h2{
+    color: #fdfdfd;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px; /* l espace li mabin stora*/
+    margin-bottom: 1em;
+    color: #07ee41;
+    font-size: 1.6em;
+    font-weight: 600;
+
+}
+
+.main h3{
+    color: #fdfdfd;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px; /*l espace li mabin l7orof*/
+    margin-top: 10px ;
+    margin-bottom: 30px;
+}
+.main p {
+    color: #f0f0f0;
+    margin-bottom: 2em;
+}
+
+.main-btn{
+    color: #000000;
+    background-color: #05f625;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 25px; /* bach l9nat dyol btn ijo m9awsin*/
+    margin-bottom: 2em;
+    transition: 1s ease;/* lwa9t bach ikbar btn o is4ar*/
+    
+
+}
+.main-btn:hover{
+    background-color: #043403;
+    color: #ffffff;
+    transform: scale(1.1); /*bach ikbar chwiya*/
+    box-shadow: 0 5px  5px rgba(255, 255, 255, 0.461);
+}
+.main .social-icons a{
+    color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title span{
+    color: #07df16;
+    font-style: italic; 
+    
+    font-size: 1em;
+    font-weight: 600 ;
+}
+
+.footer-title .span2 {
+    color: #000000;
+    font-family: Snell Roundhand, cursive;
+    
+}
+
+.footer-title .social-icons a{
+    font-size: 1em;
+    padding: 0 12px 0 0;
+}
+.footer .social-icons a{
+   color: #f0f0f0;
+}
+/*media quiry*/
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.7em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+   
+}
+@media(max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .footer-title .social-icons a{
+        font-size: 0.2em;
+        padding: 0 12px 0 0;
+    }
+}
